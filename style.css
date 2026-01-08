@@ -276,3 +276,38 @@ footer strong {
         font-size: 13px;
     }
 }
+
+/* Efect vizual rezultat calculator */
+.efect-rezultat {
+    animation: highlight 0.5s ease-in-out;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: #dff9fb;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    display: none; /* ascuns implicit */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.backtotop:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
