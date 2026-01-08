@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CleanPro</title>
+    <meta name="description" content="Contact CleanPro - firmă de curățenie din Târgu Mureș.">
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>CleanPro</h1>
+            <p>Curățenie impecabilă, de fiecare dată</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Acasă</a></li>
+                <li><a href="servicii.html">Servicii</a></li>
+                <li><a href="preturi.html">Prețuri</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- DATE CONTACT -->
+        <article class="date-contact">
+            <h2>Date de contact</h2>
+
+            <p><strong>Denumire firmă:</strong> CleanPro</p>
+            <p><strong>Adresă:</strong> Bd-ul 1 Decembrie 1918, nr. 25, Târgu Mureș, 540525</p>
+            <p><strong>Email:</strong> contact@cleanpro.ro</p>
+            <p><strong>Telefon:</strong> 0712 345 678</p>
+            <p><strong>Program:</strong></p>
+            <p>
+                Luni - Vineri: 08:00 - 20:00<br>
+                Sâmbătă: 09:00 - 15:00<br>
+                Duminică: ÎNCHIS
+            </p>
+        </article>
+
+        <!-- FORMULAR CONTACT -->
+        <section class="formular-contact">
+            <h2>Trimite-ne un mesaj</h2>
+
+            <form onsubmit="event.preventDefault(); trimiteFormular();">
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" placeholder="Numele tău">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="email@exemplu.ro">
+
+                <label for="mesaj">Mesaj:</label>
+                <textarea id="mesaj" rows="5" placeholder="Scrie mesajul tău aici..."></textarea>
+
+                <button type="submit">Trimite</button>
+            </form>
+
+            <p id="rezultat-formular">
+                <!-- Mesaj de confirmare din JavaScript -->
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact-footer">
+            <p><strong>Adresă:</strong> Bd-ul 1 Decembrie 1918, nr. 25, Târgu Mureș, 540525</p>
+            <p><strong>Email:</strong> contact@cleanpro.ro</p>
+            <p><strong>Telefon:</strong> 0712 345 678</p>
+            <p><strong>Program:</strong></p>
+            <p>
+                Luni - Vineri: 08:00 - 20:00<br>
+                Sâmbătă: 09:00 - 15:00<br>
+                Duminică: ÎNCHIS
+            </p>
+        </div>
+
+        <p class="copyright">
+            &copy; 2025 CleanPro. Toate drepturile rezervate.
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prețuri - CleanPro</title>
+    <meta name="description" content="Prețurile serviciilor de curățenie oferite de CleanPro. Calculator de preț cu reducere.">
+    <link rel="stylesheet" href="style.css">
+    <script src="preturi.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>CleanPro</h1>
+            <p>Curățenie impecabilă, de fiecare dată</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Acasă</a></li>
+                <li><a href="servicii.html">Servicii</a></li>
+                <li><a href="preturi.html">Prețuri</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- PRETURI -->
+        <section class="preturi">
+            <h2>Prețurile noastre</h2>
+
+            <ul class="lista-preturi">
+                <li><strong>Curățenie apartament:</strong> de la 200 lei</li>
+                <li><strong>Curățenie birouri:</strong> de la 300 lei</li>
+                <li><strong>Curățenie după renovare:</strong> de la 500 lei</li>
+                <li><strong>Curățenie spații comerciale:</strong> de la 400 lei</li>
+                <li><strong>Curățenie generală:</strong> de la 350 lei</li>
+            </ul>
+        </section>
+
+        <!-- CALCULATOR PRET -->
+        <section class="calculator">
+            <h2>Calculator de preț cu reducere</h2>
+
+            <label for="pret-initial">Preț inițial (lei):</label>
+            <input 
+                type="number" 
+                id="pret-initial" 
+                placeholder="Introdu prețul inițial"
+                min="0"
+            >
+
+            <button onclick="calculeazaPret()">Calculează prețul final</button>
+
+            <p id="rezultat-pret">
+                <!-- Rezultatul va fi afișat aici -->
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact-footer">
+            <p><strong>Adresă:</strong> Bd-ul 1 Decembrie 1918, nr. 25, Târgu Mureș, 540525</p>
+            <p><strong>Email:</strong> contact@cleanpro.ro</p>
+            <p><strong>Telefon:</strong> 0712 345 678</p>
+            <p><strong>Program:</strong></p>
+            <p>
+                Luni - Vineri: 08:00 - 20:00<br>
+                Sâmbătă: 09:00 - 15:00<br>
+                Duminică: ÎNCHIS
+            </p>
+        </div>
+
+        <p class="copyright">
+            &copy; 2025 CleanPro. Toate drepturile rezervate.
+        </p>
+    </footer>
+
+</body>
+</html>
